@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+
+dts:
+  # 配置文件目录
+  conf_dir: ./conf.d
+  # 并行处理数
+  concurrent_num: 1 # 1表示串行处理

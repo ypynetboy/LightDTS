@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@XXXX:1521/XXXX
+    username: XXXX
+    password: XXXX
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 10
+      auto-commit: true
+      idle-timeout: 30000
+      connection-timeout: 10000
+
+hbase:
+  zk-hosts: 10.18.100.173,10.18.100.116,10.18.100.174
+  zk-port: 2181
